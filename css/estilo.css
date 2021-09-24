@@ -1,76 +1,27 @@
-body{
-	margin: 0;
-	font-family: Roboto
-	
+div {
+  background: #2db34a;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+  padding: 10px 15px;
+  text-align: center;
 }
-.cabecera{
-	background-image: url('../imagenes/Principal.jpg');
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
-	width: 100%;
+header,
+section,
+aside,
+footer {
+  margin: 0 1.5% 24px 1.5%;
 }
-.cabecera-contenido{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
+section {
+  float: left;
+  width: 18%;
 }
-.cabecera-superior{
-	display: flex;
-	justify-content: space-between;
+aside {
+  float: right;
+  width: 76%;
 }
-.slogan{
-	background-color: #F4DEDE;
-	width: 40%;
-	padding: 20px 20px
-}
-
-@media (max-width: 500px){
-	.cabecera{
-		
-		height: 40%;
-		width: 100%;
-	}
-}
-
-@media (max-width: 700px){
-	.slogan{
-		font-size: 20px;
-	}
-}
-
-.logo{
-	padding-left: 20px;
-	padding-top: 20px; 
-}
-nav{
-	padding-right: 20px;
-	padding-top: 20px;
-}
-.nosotros{
-	margin: 0 100px 
-}
-.nosotros-contenido{
-	display: flex;
-	justify-content: space-between;
-}
-.centrado{
-	text-align: center;
-}
-.bloque{
-	flex-basis: calc(33.3% - 40px)
-}
-
-.acceso{
-	background-color: #3609B7;
-	text-align: right;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 20px;
-}
-.adm{
-	color: white;	
-	text-decoration: none;
+footer {
+  clear: both;
+  margin-bottom: 0;
 }
