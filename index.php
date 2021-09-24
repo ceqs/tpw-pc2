@@ -1,3 +1,8 @@
+<!-- CQ 
+index 
+tutorial
+ejemplos
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

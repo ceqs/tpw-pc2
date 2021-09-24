@@ -7,6 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <?php
+            include "cabecera.php";
+        ?>
+    </header>
+    <nav>
+        <?php
+            include "listado.php";
+        ?>
+    </nav>
+    <section>
+        <?php
+            include "texto.php";
+        ?>
+    </section>
+    <!-- manejar estado nuevo, editar, borrar 
+    afecta al listado y texto
+-->
 </body>
 </html>
