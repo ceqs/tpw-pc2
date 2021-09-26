@@ -1,6 +1,21 @@
 <!-- CQ 
 Listar notas
 -->
-<div>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dolor, esse dolorem fugit accusamus magni iste commodi eos totam quidem temporibus, veniam nisi ducimus praesentium, sunt nostrum aliquam velit maiores?
+<?php
+    require('../../controlador/conexion.php');
+    $conn = conectar();
+?>
+
+<div class = "list-group">
+<?php
+    foreach (listarNotas($conn) as $key => $value) {
+?>
+    <!-- <a href = "#" class = "list-group-item active"> -->
+   <a href = "#" class = "list-group-item">
+      <h4 class = "list-group-item-heading"><?=$value[2]?></h4>
+      <p class = "list-group-item-text"><?=$value[3]?></p>
+   </a>
+<?php
+}
+?>
 </div>

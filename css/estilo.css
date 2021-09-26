@@ -1,17 +1,25 @@
+body {
+  padding: 0 0 0 0;
+  margin: 0px 0px;
+}
+
 div {
-  background: #2db34a;
-  border-radius: 6px;
-  color: #fff;
+  /*background: #2db34a;*/
+  /*border-radius: 6px; */
+  /*color: #fff;*/
   display: block;
-  font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
-  padding: 10px 15px;
-  text-align: center;
+  /*font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;*/
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  padding: 0px 0px;
+  /*text-align: center;*/
 }
 header,
 section,
 aside,
 footer {
-  margin: 0 1.5% 24px 1.5%;
+  /*margin: 0 1.5% 24px 1.5%;*/
+  margin: 0 0 0 0;
 }
 section {
   float: left;
@@ -19,9 +27,76 @@ section {
 }
 aside {
   float: right;
-  width: 76%;
+  width: 82%;
 }
 footer {
   clear: both;
   margin-bottom: 0;
+}
+
+.list-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.list-group h4 {
+  margin-block-start: 2px;
+  margin-block-end: 2px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.list-group p {
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: .05rem 0.55rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.list-group-item-action {
+  width: 100%;
+  color: #495057;
+  text-align: inherit;
+}
+
+.list-group a {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
