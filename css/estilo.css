@@ -3,10 +3,14 @@ body {
   margin: 0px 0px;
 }
 
-div {
   /*background: #2db34a;*/
   /*border-radius: 6px; */
   /*color: #fff;*/
+/*div global sin color de fondo*/
+.notas {
+  /*background: #49aa5e;
+  border-radius: 6px;
+  color: #fff;*/
   display: block;
   /*font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;*/
   font-family: 'Courier New', Courier, monospace;
@@ -14,6 +18,9 @@ div {
   padding: 0px 0px;
   /*text-align: center;*/
 }
+/*div con color para notas.php*/
+
+
 header,
 section,
 aside,
@@ -99,4 +106,116 @@ footer {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+
+/*Css Cristhian*/
+header {
+	width:97%; 
+	background-image: url('../imagenes/fondonotes.jpg');
+	margin-bottom:20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  height:auto;
+}
+
+.wrapper {
+	width:90%; /* Establecemos que el ancho sera del 90% */
+	max-width:2500px; /* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin:auto; /* Centramos los elementos */
+	overflow:hidden; 
+}
+
+header .titu {
+	color:#161515;
+	font-size:50px;
+  line-height:100px;
+	float:left;
+  font-style:normal;
+  font-family:Helvetica;
+}
+
+header nav {
+	float:right;
+  line-height:100px;
+
+}
+header nav h3{
+  display:inline-block;
+	color:rgb(0, 0, 0);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:25px;
+	font-weight:bold;
+  font-family:Helvetica;
+}
+header nav a {
+	display:inline-block;
+	color:rgb(14, 14, 14);
+	text-decoration:none;
+	padding:5px 15px;
+	line-height:normal;
+  font-size:25px;	font-weight:bold;
+  font-family:Helvetica;
+}
+
+header nav a:hover {
+	background:#ffffff;
+	border-radius:50px;
+}
+body fondonotas{
+  background-image: url('../imagenes/fondonotes.jpg');
+}
+/*formato del body, para decidir*/
+/*body {font-family: Arial, Helvetica, sans-serif;}*/
+form {border: 3px solid #293a2e;}
+
+input[type=text], input[type=password],input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 15px 0;
+  display: inline-block;
+  border: 1px solid rgb(212, 100, 100);
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.imgcontenedor {
+  text-align: center;
+  margin: 1px 0 1px 0;
+}
+
+img.logo {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.logo2{
+	padding-left: 20px;
+	padding-top: 20px; 
+}
+.logueo{  
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.centrado{
+  
+  margin: 0 auto;
 }

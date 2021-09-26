@@ -6,11 +6,38 @@ function conectar() {
 }
 
 function validarUsuario($usu,$pas,$conn){
-    $sql="select * from usuarios where nomusu='$usu' and pasusu='$pas'";
+    $sql="select * from users where username='$usu' and password='$pas'";
     $res=mysqli_query($conn, $sql) or die(mysqli_error($conn));
     $can=mysqli_num_rows($res);
     return $can;
 }
+//Agregar usuario
+function agregarUser($user, $pass, $fullname, $email,$foto, $conn){
+    $sql="insert into users values('$user','$pass','$fullname','$email','$foto')";   
+    mysqli_query($conn, $sql) or die(mysqli_error($conn));
+}
+
+function mostrarFoto($user,$conn){
+    $sql="select * from users where username='$user'"; 
+    $res= mysqli_query($conn, $sql);
+    $vec=array();
+    while($f= mysqli_fetch_array($res))  
+        $vec[]=$f;
+    return $vec;
+}
+
+function eliminarUsuario($user, $conn){
+    $sql="delete from users where username='$user'";    
+    mysqli_query($conn, $sql) or die(mysqli_error($conn));
+}
+
+function cambiarFoto($user, $foto,$conn){
+    $sql="update users set fotuser='$foto' where username='$user'";    
+    mysqli_query($conn, $sql) or die(mysqli_error($conn));
+}
+
+
+
 //tabla producto
 //método para agreegar registros
 function agregarProducto($cod,$nom,$pre,$can,$fot,$tip, $conn){
