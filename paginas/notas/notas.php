@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/estilo.css">
     <title>Document</title>
 </head>
-<body>
+<body class="fondonotas">
     <header>
         <?php
             include 'cabecera.php';
