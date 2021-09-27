@@ -39,7 +39,7 @@
     </section>
 	
 	<section class="nosotros centrado">
-		<h2>Caracteristicas</h2>
+		<h2>Conoce UTP Notas</h2>
 
 		<div class="nosotros-contenido">
 			<div class="bloque">
