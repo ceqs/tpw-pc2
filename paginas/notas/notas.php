@@ -1,3 +1,9 @@
+<?php		
+    session_start();
+    if(!isset($_SESSION['usuario'])) {
+        header("location:../login/login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +32,11 @@
     
     <!-- manejar estado nuevo, editar, borrar 
     afecta al listado y texto
+
+    Cuando es editar viajas así: http://localhost/utpnotas/paginas/notas/notas.php
+    Cuando es editar viajas así: http://localhost/utpnotas/paginas/notas/notas.php?action=editar&id=1
+    Cuando es editar viajas así: http://localhost/utpnotas/paginas/notas/notas.php?action=nuevo
+    Cuando es editar viajas así: http://localhost/utpnotas/paginas/notas/notas.php?action=delete&id=1
 -->
 </body>
 </html>

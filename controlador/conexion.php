@@ -125,8 +125,8 @@ function listarTipo($conn){
 }
 
 // ceqs: funcion que lista las notas
-function listarNotas($conn) {
-    $sql="select id, username, title, text, create_date from notes";
+function listarNotas($usr, $conn) {
+    $sql="select id, username, title, text, create_date from notes where username = '$usr' order by update_date desc";
     $res= mysqli_query($conn, $sql);
     $vec=array();
     while($f= mysqli_fetch_array($res))

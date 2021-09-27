@@ -108,6 +108,10 @@ footer {
   -webkit-text-decoration-skip: objects;
 }
 
+.list-group a:hover:not(.active) {
+  background-color: rgb(230, 230, 230);
+}
+
 /*Css Cristhian*/
 header {
 	width:97%; 

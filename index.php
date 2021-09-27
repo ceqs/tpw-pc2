@@ -19,9 +19,9 @@
         </div>
         <div class="main-header-space">&nbsp;</div>
         <div class="main-header-buttons">
-            <button class="" type="button">
+            <button class="" type="button" onclick="window.location.href='paginas/notas/notas.php'">
                 <span class="">
-                    <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Iniciar sesión</span>
+                    <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Ingresar</span>
                 </span>
             </button>
             <button class="" type="button">
