@@ -1,12 +1,10 @@
 <!-- Christian 
 usuario, y cerrar session.
 -->
-<?php
-        session_start();
-    ?>
+
 <div class="wrapper">
 	
-<div class="titu"> <a href="../notas/notas.php">UTP_Notas</a></div>
+<div class="titu"> <a href="../notas/notas.php"><img src="../../imagenes/logo.png" class="logo"></a></div>
         
         <nav>
             <h3>Bienvenido: <?=$_SESSION['usuario']?> </h3>

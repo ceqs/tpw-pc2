@@ -132,7 +132,7 @@ header {
 header .titu {
 	color:#161515;
 	font-size:50px;
-  line-height:100px;
+  
 	float:left;
   font-style:normal;
   font-family:Helvetica;
@@ -167,6 +167,7 @@ header nav a:hover {
 	background:#ffffff;
 	border-radius:50px;
 }
+
 body fondonotas{
   background-image: url('../imagenes/fondonotes.jpg');
 }
@@ -201,24 +202,25 @@ button:hover {
   text-align: center;
   margin: 1px 0 1px 0;
 }
-
 img.logo {
-  width: 15%;
-  border-radius: 50%;
+  width: 105px;
+  border-radius: 10%;
+  margin-top: 20px;
+	
 }
 
 .container {
   padding: 16px;
 }
-.logo2{
-	padding-left: 20px;
-	padding-top: 20px; 
-}
+
 .logueo{  
   align-items: center;
   background-color: #f1f1f1;
 }
-
+.logo2{
+	padding-left: 20px;
+	padding-top: 20px; 
+}
 .centrado{
   
   margin: 0 auto;

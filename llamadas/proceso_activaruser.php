@@ -3,7 +3,7 @@
 	$conn =conectar();
 	
 	$user= $_REQUEST['usuario'];
-    desactivarUsuario($user, $conn);
+    activarUsuario($user, $conn);
 	
 	header('Location: ../paginas/login/login.php');
 

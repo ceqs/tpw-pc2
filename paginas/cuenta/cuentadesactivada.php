@@ -5,40 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/estilo.css">
-    <title>Document</title>
+    <title>Desactivado</title>
 </head>
-<body class="fondonotas">
+<body>
 <header>
         <?php
         session_start();
             require('../../controlador/conexion.php');
             $conn=conectar();
-            include '../notas/cabecera.php';            
+            
+    
+            
         ?>
+        <div class="wrapper">
+	
+        <div class="titu"><img src="../../imagenes/logo.png" class="logo">  </div>
+            <nav>
+                <h3>Bienvenido: <?=$_SESSION['usuario']?> </h3>
+                <a href="../../llamadas/proceso_cerrar.php">Cerrar Sesión</a>
+            </nav>
 
+    </div>
 </header>
 
- 
+
  <div class="div logueo">     
           <div class="imgcontenedor">
               <br><br><br><br>
-            <!--PHP-->
+            <h1>Tu cuenta esta desactivada</h1>
+              <!--PHP-->
             <?php
                 foreach (mostrarFoto($_SESSION['usuario'],$conn) as $key => $value) {
                     ?>
                     <img src="../<?=$value[6]?>"  class="logo"><br>
-                    <table class="centrado">
-                        <tr>
-                            <td><b>Cambiar imagen: </b>  </td>
-                            <td>
-                            <form enctype="multipart/form-data" action="../../llamadas/proceso_cambiarfoto.php" method="post">
-                                <input type="file" name="foto">
-                                <input type="hidden" name="usuario" value="<?=$_SESSION['usuario']?>">
-                                <button type="submit">Actualizar Foto</button>
-                            </form>
-                            </td>
-                            
-                        </tr>
+                    <table class="centrado">   
                         <tr>
                             <td><label><b>Usuario: </b></label></td>
                             <td><?=$value[0]?></td>
@@ -53,7 +53,7 @@
                 </tr>
                 </table>
                     <br><br><br>
-                    <a href="../../llamadas/proceso_eliminaruser.php?usuario=<?=$_SESSION['usuario']?>">Desactivar Cuenta</a>
+                    <a href="../../llamadas/proceso_activaruser.php?usuario=<?=$_SESSION['usuario']?>">Activar Cuenta</a>
 <?php                }
      ?>       
           </div>

@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `utpnotas`.`users` (
   `email` VARCHAR(45) NULL,
   `create_date` DATETIME NULL DEFAULT now(),
   `status` VARCHAR(20) NULL DEFAULT 'ACTIVE',
+   `fotuser` VARCHAR(50) NULL,
   PRIMARY KEY (`username`))
 ENGINE = InnoDB;
 

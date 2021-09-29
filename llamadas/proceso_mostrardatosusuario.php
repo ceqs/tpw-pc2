@@ -9,12 +9,7 @@
     $foto = $_FILES['foto']['name'];
 	$ruta = $_FILES['foto']['tmp_name'];
 	$fotuser = "../imagenes/FotosUser/".$foto;
-	copy($ruta, $fotuser);
-
-
-    agregarUser($user, $pass, $fullname, $email, $fotuser,$conn);
-
-	
+	copy($ruta, $fotuser);	
 	header('Location: ../paginas/login/login.php');
 
 

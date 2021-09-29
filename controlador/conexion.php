@@ -1,21 +1,22 @@
 <?php
  //variable conexion
 function conectar() {
-    $conn= mysqli_connect ("127.0.0.1", "root", "root", "utpnotas");
+    $conn= mysqli_connect ("localhost", "root", "", "utpnotas");
     return $conn; 
 }
 
 function validarUsuario($usu,$pas,$conn){
-    $sql="select * from users where username='$usu' and password='$pas'";
+    $sql="select status from users where username='$usu' and password='$pas'";
     $res=mysqli_query($conn, $sql) or die(mysqli_error($conn));
-    $can=mysqli_num_rows($res);
-    return $can;
+    $fila = mysqli_fetch_row($res);
+    return $fila[0];
 }
 //Agregar usuario
 function agregarUser($user, $pass, $fullname, $email,$foto, $conn){
-    $sql="insert into users values('$user','$pass','$fullname','$email','$foto')";   
+    $sql="insert into users values('$user','$pass','$fullname','$email',CURRENT_TIMESTAMP,'active','$foto')";   
     mysqli_query($conn, $sql) or die(mysqli_error($conn));
 }
+
 
 function mostrarFoto($user,$conn){
     $sql="select * from users where username='$user'"; 
@@ -26,11 +27,15 @@ function mostrarFoto($user,$conn){
     return $vec;
 }
 
-function eliminarUsuario($user, $conn){
-    $sql="delete from users where username='$user'";    
+function desactivarUsuario($user, $conn){
+    $sql="update users set status = 'Disabled' where username='$user'";    
     mysqli_query($conn, $sql) or die(mysqli_error($conn));
 }
 
+function activarUsuario($user, $conn){
+    $sql="update users set status = 'active' where username='$user'";    
+    mysqli_query($conn, $sql) or die(mysqli_error($conn));
+}
 function cambiarFoto($user, $foto,$conn){
     $sql="update users set fotuser='$foto' where username='$user'";    
     mysqli_query($conn, $sql) or die(mysqli_error($conn));
