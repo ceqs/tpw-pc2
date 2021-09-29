@@ -6,6 +6,4 @@
     desactivarUsuario($user, $conn);
 	
 	header('Location: ../paginas/login/login.php');
-
-
 ?>
