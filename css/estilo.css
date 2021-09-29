@@ -114,11 +114,12 @@ footer {
 
 /*Css Cristhian*/
 header {
-	width:97%; 
-	background-image: url('../imagenes/fondonotes.jpg');
-	margin-bottom:20px;
-  margin-top: 10px;
-  border-radius: 10px;
+	width:100%; 
+	/*background-image: url('../imagenes/fondonotes.jpg'); */
+	/*margin-bottom:20px;*/
+  /*margin-top: 10px;*/
+  /*border-radius: 10px;*/
+  background-color: #3bafda;
   height:auto;
 }
 
@@ -132,7 +133,6 @@ header {
 header .titu {
 	color:#161515;
 	font-size:50px;
-  
 	float:left;
   font-style:normal;
   font-family:Helvetica;
@@ -140,19 +140,31 @@ header .titu {
 
 header nav {
 	float:right;
-  line-height:100px;
-
+  line-height: 70px;
 }
+
 header nav h3{
   display:inline-block;
 	color:rgb(0, 0, 0);
 	text-decoration:none;
-	padding:10px 20px;
+	padding:0px 20px;
 	line-height:normal;
 	font-size:25px;
 	font-weight:bold;
   font-family:Helvetica;
 }
+
+header nav p { 
+  display:inline-block;
+	color:rgb(0, 0, 0);
+	text-decoration:none;
+	padding:0px 20px;
+	line-height:normal;
+	/*font-size:25px;*/
+	font-weight:bold;
+  font-family:Helvetica;
+}
+
 header nav a {
 	display:inline-block;
 	color:rgb(14, 14, 14);
@@ -203,10 +215,10 @@ button:hover {
   margin: 1px 0 1px 0;
 }
 img.logo {
-  width: 105px;
-  border-radius: 10%;
-  margin-top: 20px;
-	
+  width: 80px;
+  margin-top: 10px;
+  /*border-radius: 10%;*/
+  /*margin-top: 20px;*/
 }
 
 .container {

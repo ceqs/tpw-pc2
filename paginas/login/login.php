@@ -15,7 +15,9 @@
       <!--Formulario para logueo -> proceso_logueo.php-->
         <form action="../../llamadas/proceso_logueo.php" method="post">
           <div class="imgcontenedor">
-            <img src="../../imagenes/logo.png"  class="logo">
+            <a href="/utpnotas/">
+              <img src="../../imagenes/logo.png" class="logo">
+            </a>
           </div>
          <!--Contenedor: label user,contraseña y envio-->
          <div class="container">

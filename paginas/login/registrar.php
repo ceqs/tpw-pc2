@@ -14,7 +14,9 @@
       <!--Formulario para registro -> proceso_registrouser.php-->
         <form enctype="multipart/form-data" action="../../llamadas/proceso_registrouser.php" method="post">
           <div class="imgcontenedor">
-            <img src="../../imagenes/logo.png"  class="logo">
+            <a href="/utpnotas/">
+              <img src="../../imagenes/logo.png" class="logo">
+            </a>
           </div>
          <!--Contenedor: label user,contraseña,nombreC,correo y envio-->
          <div class="container">
