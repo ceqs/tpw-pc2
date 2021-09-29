@@ -4,7 +4,7 @@ usuario, y cerrar session.
 
 <div class="wrapper">
     <div class="titu">
-        <a href="/utpnotas/">
+        <a href="../../">
             <img src="../../imagenes/logo.png" class="logo">
         </a>
     </div>

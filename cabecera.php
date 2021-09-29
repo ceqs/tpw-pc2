@@ -1,6 +1,6 @@
 <header class="main-header">
     <div class="main-header-logo">
-        <a href="/utpnotas/">
+        <a href="index.php">
             <img class="logo" src="imagenes/Logo.png" width="80px">
         </a>
     </div>
