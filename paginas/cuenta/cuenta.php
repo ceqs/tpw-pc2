@@ -1,3 +1,9 @@
+<?php
+session_start();
+require('../../controlador/conexion.php');
+$conn=conectar();          
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +15,9 @@
 </head>
 <body class="fondonotas">
 <header>
-        <?php
-        session_start();
-            require('../../controlador/conexion.php');
-            $conn=conectar();
-            include '../notas/cabecera.php';            
-        ?>
-
+<?php
+    include '../notas/cabecera.php';  
+?>
 </header>
 
  

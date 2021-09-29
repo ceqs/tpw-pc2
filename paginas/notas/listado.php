@@ -13,7 +13,7 @@ Listar notas
 </button>
 <div class = "list-group">
 <?php
-    $usr = 'ceqs';
+    $usr = $_SESSION['usuario'];
     foreach (listarNotas($usr, $conn) as $key => $value) {
 ?>
     <!-- <a href = "#" class = "list-group-item active"> -->

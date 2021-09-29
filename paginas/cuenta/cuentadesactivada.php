@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    require('../../controlador/conexion.php');
+    $conn=conectar();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,25 +13,17 @@
     <title>Desactivado</title>
 </head>
 <body>
-<header>
-        <?php
-        session_start();
-            require('../../controlador/conexion.php');
-            $conn=conectar();
-            
-    
-            
-        ?>
+    <header>
         <div class="wrapper">
-	
-        <div class="titu"><img src="../../imagenes/logo.png" class="logo">  </div>
+            <div class="titu">
+                <img src="../../imagenes/logo.png" class="logo">
+            </div>
             <nav>
                 <h3>Bienvenido: <?=$_SESSION['usuario']?> </h3>
                 <a href="../../llamadas/proceso_cerrar.php">Cerrar Sesión</a>
             </nav>
-
-    </div>
-</header>
+        </div>
+    </header>
 
 
  <div class="div logueo">     
