@@ -4,7 +4,7 @@ Listar notas
 <?php
     require('../../controlador/conexion.php');
     $conn = conectar();
-    $id = $_REQUEST['id'];
+  //  $id = $_REQUEST['id'];
 ?>
 <button class="" type="button" onclick="window.location.href='notas.php?action=nuevo'">
     <span class="">
@@ -18,7 +18,8 @@ Listar notas
 ?>
     <!-- <a href = "#" class = "list-group-item active"> -->
 <?php
-    if($id == $value[0]) {
+    
+    if( isset($_REQUEST['id']) && $_REQUEST['id']== $value[0]) {
 ?>
    <a href = "notas.php?action=editar&id=<?=$value[0]?>" class = "list-group-item active">
 <?php

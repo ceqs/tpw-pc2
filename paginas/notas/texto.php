@@ -5,7 +5,7 @@ Grabar y actualizar
 <div class="notas">
     <div class="text-header-buttons">
         <?php
-        if($_REQUEST['action'] == 'editar') {
+        if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'editar') {
         ?>
         <button class="" type="button" onclick="window.location.href='../../llamadas/proceso_eliminarnota.php?id=<?=$_REQUEST['id']?>'">
             <span class="">
@@ -27,7 +27,7 @@ Grabar y actualizar
         </button>
     </div>
     <?php
-        if($_REQUEST['action'] == 'editar') {
+        if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'editar') {
             foreach (buscarNota($_REQUEST['id'], $conn) as $key => $value) {
     ?>
     <form id="form-id" method="POST" action="../../llamadas/proceso_actualizarnota.php">
