@@ -27,7 +27,7 @@
 				</p>
 			</div>
 			<div class="bloque">
-				<img src="imagenes/Calidad.png" width="20%">
+				<img src="imagenes/FotosInicio/facilDeUsar.png" height="150">
 				<h3>Fácil de usar</h3>
 				<p>Gracias a su interfaz simple podras crear, modificar, actualizar o eliminar tus notas al alcance de un click, también tendrás
 					tus ultimas notas fijadas en la parte superior para que no te olvides de nada. 
@@ -35,7 +35,7 @@
 				</p>
 			</div>
 			<div class="bloque">
-				<img src="imagenes/Garantia.png" width="20%">
+				<img src="imagenes/FotosEjemplos/Ejemplo01.png" width="95%">
 				<h3>Te damos algunas ideas de uso</h3>
 				<p>Puedes visitar nuestros ejemplos de texto en la parte superior, recuerda que UTP Notas
 					además de guardar tus apuntes de la universidad, también puede crear listas de tareas, de compras, agendar reuniones o ideas para tu nuevo proyecto. Que esperas para crear tu cuenta ahora.

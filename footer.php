@@ -4,7 +4,7 @@
             <span>Integrantes:</span>
             <ul>
                 <li>Carlos Enrique Quispe Salazar - u20101684</li>
-                <li>Christian - u20101684</li>
+                <li>Cristhian Martin Valladolid Chero - 1610603</li>
             </ul>
         </div>
         <div class="site-footer-inner">

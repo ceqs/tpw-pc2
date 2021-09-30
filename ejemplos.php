@@ -12,10 +12,19 @@
 <?php
     include 'cabecera.php';
 ?>
-
-<h1>Ejemplos</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita illum temporibus accusamus cupiditate. Vero fugit enim cumque at, voluptatibus error laboriosam necessitatibus quam explicabo facilis, hic assumenda quibusdam alias!</p>
-
+<center>
+    <h1>Aqui te damos algunos ejemplos para aprovechar al máximo UTP Notas</h1>
+    <h3>Crea apuntes de todo lo aprendido en tus cursos de la universidad</h3>
+    <img src="imagenes/FotosEjemplos/Ejemplo01.png" width="65%">
+    <h3>Crea listas de todos tus pendientes para gestionar mejor tu semana</h3>
+    <img src="imagenes/FotosEjemplos/Ejemplo02.png" width="65%">
+    <h3>Agenda tus reuniones para que no faltes a ninguna</h3>
+    <img src="imagenes/FotosEjemplos/Ejemplo03.png" width="65%">
+    <h3>Reune y fomenta ideas de tu equipo para la creación de tu nuevo proyecto</h3>
+    <img src="imagenes/FotosEjemplos/Ejemplo04.png" width="65%">
+    <h3>Combínalo como tu quieras</h3>
+    <img src="imagenes/FotosEjemplos/Ejemplo05.png" width="65%">
+</center>
 <?php
     include 'footer.php';
 ?>

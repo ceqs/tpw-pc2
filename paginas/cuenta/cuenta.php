@@ -1,9 +1,3 @@
-<?php
-session_start();
-require('../../controlador/conexion.php');
-$conn=conectar();          
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,12 +9,15 @@ $conn=conectar();
 </head>
 <body class="fondonotas">
 <header>
-<?php
-    include '../notas/cabecera.php';  
-?>
+        <?php
+            session_start();
+            require('../../controlador/conexion.php');
+            $conn=conectar();
+            include '../notas/cabecera.php';            
+        ?>
+
 </header>
 
- 
  <div class="div logueo">     
           <div class="imgcontenedor">
               <br><br><br><br>
