@@ -8,9 +8,12 @@
 	$email = $_REQUEST['correo'];
     $foto = $_FILES['foto']['name'];
 	$ruta = $_FILES['foto']['tmp_name'];
-	$fotuser = "../imagenes/FotosUser/".$foto;
-	copy($ruta, $fotuser);
+	$fotuser = "";
 
+	if(!empty($foto)) {
+		$fotuser = "../imagenes/FotosUser/".$foto;
+		copy($ruta, $fotuser);
+	}
 
     agregarUser($user, $pass, $fullname, $email, $fotuser,$conn);
 	header('Location: ../paginas/login/login.php');

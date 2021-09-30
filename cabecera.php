@@ -14,15 +14,11 @@
     </div>
     <div class="main-header-space">&nbsp;</div>
     <div class="main-header-buttons">
-        <button class="" type="button" onclick="window.location.href='paginas/notas/notas.php'">
-            <span class="">
-                <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Ingresar</span>
-            </span>
+        <button class="main-header-button-ingresar" type="button" onclick="window.location.href='paginas/notas/notas.php'">
+            Ingresar
         </button>
-        <button class="" type="button" onclick="window.location.href='paginas/login/registrar.php'">
-            <span class="">
-                <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Regístrese</span>
-            </span>
+        <button class="main-header-button-registrar" type="button" onclick="window.location.href='paginas/login/registrar.php'">
+            Regístrese
         </button>
     </div>
 </header>

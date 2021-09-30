@@ -19,7 +19,7 @@
             include 'cabecera.php';
         ?>
     </header>
-    <section>
+    <section style="height: 86%">
         <?php
             include 'listado.php';
         ?>

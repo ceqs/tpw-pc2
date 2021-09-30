@@ -30,8 +30,9 @@ Listar notas
 <?php
     }
 ?>
-      <h4 class = "list-group-item-heading"><?=$value[2]?></h4>
-      <p class = "list-group-item-text"><?=$value[3]?></p>
+      <h4 class="list-group-item-heading"><?=$value[2]?></h4>
+      <p class="list-group-item-text"><?=$value[3]?></p>
+      <p class="list-group-item-time"><?=time_elapsed_string($value[5])?></p>
    </a>
 <?php
 }

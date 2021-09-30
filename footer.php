@@ -1,26 +1,13 @@
 <footer class="site-footer has-top-divider">
     <div class="container">
-        <div class="site-footer-inner">
-            <div class="brand footer-brand">
-                <a href="#">
-                    <img class="asset-light" src="dist/images/logo-light.svg" alt="Logo">
-                    <img class="asset-dark" src="dist/images/logo-dark.svg" alt="Logo">
-                </a>
-            </div>
-            <ul class="footer-links list-reset">
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">About us</a>
-                </li>
-                <li>
-                    <a href="#">FAQ's</a>
-                </li>
-                <li>
-                    <a href="#">Support</a>
-                </li>
+        <div class="site-footer-integrantes">
+            <span>Integrantes:</span>
+            <ul>
+                <li>Carlos Enrique Quispe Salazar - u20101684</li>
+                <li>Christian - u20101684</li>
             </ul>
+        </div>
+        <div class="site-footer-inner">
             <ul class="footer-social-links list-reset">
                 <li>
                     <a href="#">
@@ -47,7 +34,7 @@
                     </a>
                 </li>
             </ul>
-            <div class="footer-copyright">&copy; 2021 UTP Notas, todos los derechos reservados.</div>
         </div>
     </div>
+    <div class="footer-copyright">&copy; 2021 UTP Notas, todos los derechos reservados.</div>
 </footer>

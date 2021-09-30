@@ -31,7 +31,7 @@ Grabar y actualizar
             <input class="form__field" type="text" name="title" id="title" placeholder="Name" value="<?=$value[2]?>" required>
             <label for="name" class="form__label">Título</label>
         </div>
-        <textarea name="text" id="text" cols="100" rows="10"><?=$value[3]?></textarea>
+        <textarea name="text" id="text" rows="40"><?=$value[3]?></textarea>
     <?php
             }
         }
@@ -42,7 +42,7 @@ Grabar y actualizar
             <input class="form__field" type="text" name="title" id="title" placeholder="Name" required>
             <label for="name" class="form__label">Título</label>
         </div>
-        <textarea name="text" id="text" cols="100" rows="10"></textarea>
+        <textarea name="text" id="text" rows="40"></textarea>
     <?php
         }
     ?>

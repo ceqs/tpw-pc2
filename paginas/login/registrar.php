@@ -7,40 +7,37 @@
     <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
     <title>RegistrarUsuario</title>
 </head>
-<body>
-
-    <!--contenedor logueo-registro -->
-    <div class="div logueo">
-      <!--Formulario para registro -> proceso_registrouser.php-->
-        <form enctype="multipart/form-data" action="../../llamadas/proceso_registrouser.php" method="post">
-          <div class="imgcontenedor">
-            <a href="../../">
-              <img src="../../imagenes/logo.png" class="logo">
-            </a>
-          </div>
-         <!--Contenedor: label user,contraseña,nombreC,correo y envio-->
-         <div class="container">
-            <h1>Registro</h1>
-            <label><b>Usuario</b></label>
-            <input type="text" placeholder="Ingrese el nombre de usuario" name="usuario" required>
-
-            <label><b>Contraseña</b></label>
-            <input type="password" placeholder="Ingrese su contraseña" name="contraseña" required>                
-            
-            <label><b>Nombre Completo</b></label>
-            <input type="text" placeholder="Ingrese su nombre completo" name="nomC" required>                
-
-            <label><b>Correo</b></label>
-            <input type="email" placeholder="Ingrese su correo" name="correo" required>      
-            
-            <label><b>Foto</b></label>
-		    <input type="file" name="foto"><br>
-            <button type="submit">Registro</button>
-              <center>
-                <a href="login.php">Volver a logueo</a>
-              </center>
-         </div>    
-        </form>
+  <body class="login-body">
+      <form class='login-form' enctype="multipart/form-data" action="../../llamadas/proceso_registrouser.php" method="post">
+      <div class="imgcontenedor">
+        <a href="../../">
+          <img src="../../imagenes/logo.png" class="logo">
+        </a>
       </div>
-</body>
+      <br><br>
+      <div class="flex-row">
+        <label for="username"><b>Usuario: &nbsp;&nbsp;&nbsp;</b></label>
+        <input id="username" class="lf--input" type="text" placeholder="Ingrese el nombre de usuario" name="usuario" required>
+      </div>
+      <div class="flex-row">
+        <label for="password"><b>Password: &nbsp;&nbsp;&nbsp;</b></label>
+        <input id="password" class="lf--input" type="password" placeholder="Ingrese su contraseña" name="contraseña" required>
+      </div>
+      <div class="flex-row">
+        <label for="nombres"><b>Nombre completo: &nbsp;&nbsp;&nbsp;</b></label>
+        <input id="nombres" class="lf--input" type="text" placeholder="Ingrese su nombre completo" name="nomC" required>
+      </div>
+      <div class="flex-row">
+        <label for="username"><b>Correo: &nbsp;&nbsp;&nbsp;</b></label>
+        <input id="username" class="lf--input" type="email" placeholder="Ingrese su correo" name="correo" required>
+      </div>
+      <div class="flex-row">
+        <label for="foto"><b>Foto: &nbsp;&nbsp;&nbsp;</b></label>
+        <input id="foto" class="lf--input" type="file" name="foto">
+      </div>
+      <input class="lf--submit" type="submit" value="Registrarse">
+    </form>
+    <a class='lf--forgot' href="login.php">Volver a login</a>
+
+  </body>
 </html>

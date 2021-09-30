@@ -45,7 +45,7 @@ function cambiarFoto($user, $foto,$conn){
 // Notas
 // ceqs: funcion que lista las notas
 function listarNotas($usr, $conn) {
-    $sql="select id, username, title, text, create_date from notes where username = '$usr' order by update_date desc";
+    $sql="select id, username, title, text, create_date, update_date from notes where username = '$usr' order by update_date desc";
     $res= mysqli_query($conn, $sql);
     $vec=array();
     while($f= mysqli_fetch_array($res))
@@ -76,6 +76,35 @@ function actualizarNota($id, $title, $text, $conn){
 function eliminarNota($id, $conn){
     $sql="delete from notes where id=$id;";    
     mysqli_query($conn, $sql) or die(mysqli_error($conn));
+}
+
+function time_elapsed_string($datetime, $full = false) {
+    $now = new DateTime;
+    $ago = new DateTime($datetime, new DateTimeZone('America/Lima'));
+    $diff = $now->diff($ago);
+
+    $diff->w = floor($diff->d / 7);
+    $diff->d -= $diff->w * 7;
+
+    $string = array(
+        'y' => 'año',
+        'm' => 'mes',
+        'w' => 'semana',
+        'd' => 'día',
+        'h' => 'hora',
+        'i' => 'minuto',
+        's' => 'segundo',
+    );
+    foreach ($string as $k => &$v) {
+        if ($diff->$k) {
+            $v = $diff->$k . ' ' . $v . ($diff->$k > 1 ? 's' : '');
+        } else {
+            unset($string[$k]);
+        }
+    }
+
+    if (!$full) $string = array_slice($string, 0, 1);
+    return $string ? implode(', ', $string) . ' antes' : 'justo ahora';
 }
 
 ?>
