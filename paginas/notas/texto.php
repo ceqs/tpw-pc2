@@ -7,23 +7,19 @@ Grabar y actualizar
         <?php
         if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'editar') {
         ?>
-        <button class="" type="button" onclick="window.location.href='../../llamadas/proceso_eliminarnota.php?id=<?=$_REQUEST['id']?>'">
-            <span class="">
-                <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Eliminar</span>
-            </span>
+        <button class="notas-button-delete" type="button" onclick="window.location.href='../../llamadas/proceso_eliminarnota.php?id=<?=$_REQUEST['id']?>'">
+            Eliminar
         </button>
-        <button class="" type="button" onclick="document.getElementById('form-id').submit();">
+        <button class="notas-button-save" type="button" onclick="document.getElementById('form-id').submit();">
         <?php
         }
         else {
         ?>
-        <button class="" type="button" onclick="document.getElementById('form-id').submit();">
+        <button class="notas-button-save" type="button" onclick="document.getElementById('form-id').submit();">
         <?php
         }
         ?>
-            <span class="">
-                <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Guardar</span>
-            </span>
+            Guardar
         </button>
     </div>
     <?php

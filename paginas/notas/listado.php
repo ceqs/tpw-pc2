@@ -6,11 +6,11 @@ Listar notas
     $conn = conectar();
   //  $id = $_REQUEST['id'];
 ?>
-<button class="" type="button" onclick="window.location.href='notas.php?action=nuevo'">
-    <span class="">
-        <span class="" style="-webkit-line-clamp:2;-webkit-box-orient:vertical;max-height:calc(2 * 1.6em)">Nuevo</span>
-    </span>
-</button>
+<div class="notas-button-new-container">
+    <button class="notas-button-new" type="button" onclick="window.location.href='notas.php?action=nuevo'">
+        Nuevo
+    </button>
+</div>
 <div class = "list-group">
 <?php
     $usr = $_SESSION['usuario'];
