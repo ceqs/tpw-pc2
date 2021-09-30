@@ -26,18 +26,22 @@ Grabar y actualizar
         if(isset($_REQUEST['action']) && $_REQUEST['action'] == 'editar') {
             foreach (buscarNota($_REQUEST['id'], $conn) as $key => $value) {
     ?>
-    <form id="form-id" method="POST" action="../../llamadas/proceso_actualizarnota.php">
-        <input type="text" name="title" id="title" value="<?=$value[2]?>">
-        <hr>
+    <form class="form-notes" id="form-id" method="POST" action="../../llamadas/proceso_actualizarnota.php">
+        <div class="form__group">
+            <input class="form__field" type="text" name="title" id="title" placeholder="Name" value="<?=$value[2]?>" required>
+            <label for="name" class="form__label">Título</label>
+        </div>
         <textarea name="text" id="text" cols="100" rows="10"><?=$value[3]?></textarea>
     <?php
             }
         }
         else {
     ?>
-    <form id="form-id" method="POST" action="../../llamadas/proceso_agregarnota.php">
-        <input type="text" name="title" id="title">
-        <hr>
+    <form class="form-notes" id="form-id" method="POST" action="../../llamadas/proceso_agregarnota.php">
+        <div class="form__group">
+            <input class="form__field" type="text" name="title" id="title" placeholder="Name" required>
+            <label for="name" class="form__label">Título</label>
+        </div>
         <textarea name="text" id="text" cols="100" rows="10"></textarea>
     <?php
         }

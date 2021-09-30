@@ -85,9 +85,8 @@ footer {
 
 .list-group-item.active {
   z-index: 2;
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #cae9f8;
+  border-color: #cae9f8;
 }
 
 .list-group-item:first-child {
@@ -119,7 +118,7 @@ header {
 	/*margin-bottom:20px;*/
   /*margin-top: 10px;*/
   /*border-radius: 10px;*/
-  background-color: #3bafda;
+  background-color: #348cd4;
   height:auto;
 }
 
@@ -167,16 +166,16 @@ header nav p {
 
 header nav a {
 	display:inline-block;
-	color:rgb(14, 14, 14);
+	color:rgba(255,255,255,.8);
 	text-decoration:none;
 	padding:5px 15px;
 	line-height:normal;
-  font-size:25px;	font-weight:bold;
+  font-size:15px;	font-weight:bold;
   font-family:Helvetica;
 }
 
 header nav a:hover {
-	background:#ffffff;
+	background:#58a2df;
 	border-radius:50px;
 }
 
@@ -191,6 +190,7 @@ form {
 }
 */
 
+/*
 input[type=text], input[type=password],input[type=email] {
   width: 100%;
   padding: 12px 20px;
@@ -199,7 +199,7 @@ input[type=text], input[type=password],input[type=email] {
   border: 1px solid rgb(212, 100, 100);
   box-sizing: border-box;
 }
-
+*/
 /*
 button {
   background-color: #04AA6D;
@@ -307,4 +307,71 @@ img.logo {
 .notas-button-delete:hover {
   background-color: #b8bbbd;
   color: black;
+}
+
+/* TITLE NOTES */
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: rgb(114, 113, 113);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #11998e, #38ef7d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #11998e;
+  font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.form-notes {
+  margin: 5px;
+}
+
+textarea {
+  margin: 5px;
 }
