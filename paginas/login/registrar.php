@@ -38,6 +38,5 @@
       <input class="lf--submit" type="submit" value="Registrarse">
     </form>
     <a class='lf--forgot' href="login.php">Volver a login</a>
-
   </body>
 </html>

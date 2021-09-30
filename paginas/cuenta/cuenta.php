@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    require('../../controlador/conexion.php');
+    $conn=conectar();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,55 +13,44 @@
     <title>Document</title>
 </head>
 <body class="fondonotas">
-<header>
+    <header>
         <?php
-            session_start();
-            require('../../controlador/conexion.php');
-            $conn=conectar();
             include '../notas/cabecera.php';            
         ?>
-
-</header>
-
- <div class="div logueo">     
-          <div class="imgcontenedor">
-              <br><br><br><br>
-            <!--PHP-->
-            <?php
-                foreach (mostrarFoto($_SESSION['usuario'],$conn) as $key => $value) {
-                    ?>
-                    <img src="../<?=$value[6]?>"  class="logo"><br>
-                    <table class="centrado">
-                        <tr>
-                            <td><b>Cambiar imagen: </b>  </td>
-                            <td>
-                            <form enctype="multipart/form-data" action="../../llamadas/proceso_cambiarfoto.php" method="post">
-                                <input type="file" name="foto">
-                                <input type="hidden" name="usuario" value="<?=$_SESSION['usuario']?>">
-                                <button type="submit">Actualizar Foto</button>
-                            </form>
-                            </td>
-                            
-                        </tr>
-                        <tr>
-                            <td><label><b>Usuario: </b></label></td>
-                            <td><?=$value[0]?></td>
-                        </tr>
-                        <tr>
-                            <td><label><b>Nombre Completo: </b></label></td>
-                            <td> <?=$value[2]?></td>
-                        </tr>
-                        <tr>
-                            <td><label><b>Correo: </b></label></td>
-                            <td><?=$value[3]?></td>
-                </tr>
-                </table>
-                    <br><br><br>
-                    <a href="../../llamadas/proceso_eliminaruser.php?usuario=<?=$_SESSION['usuario']?>">Desactivar Cuenta</a>
-<?php                }
-     ?>       
-          </div>
+    </header>
+    <br><br><br><br>
+    <?php
+        foreach (mostrarFoto($_SESSION['usuario'],$conn) as $key => $value) {
+    ?>
+    <div class="login-body">
+        <form class='login-form' enctype="multipart/form-data" action="../../llamadas/proceso_cambiarfoto.php" method="post">
+            <div class="imgcontenedor">
+                <img src="../<?=$value[6]?>"  class="logo">
+            </div>
+            <br><br>
+            <div class="flex-row">
+                <label for="username"><b>Usuario: &nbsp;&nbsp;&nbsp;</b></label>
+                <label for="username"><b><?=$value[0]?></b></label>
+            </div>
+            <div class="flex-row">
+                <label for="password"><b>Nombre completo: &nbsp;&nbsp;&nbsp;</b></label>
+                <label for="username"><b><?=$value[2]?></b></label>
+            </div>
+            <div class="flex-row">
+                <label for="nombres"><b>Correo: &nbsp;&nbsp;&nbsp;</b></label>
+                <label for="username"><b><?=$value[3]?></b></label>
+            </div>
+            <div class="flex-row">
+                <label for="foto"><b>Cambiar foto: &nbsp;&nbsp;&nbsp;</b></label>
+                <input id="foto" class="lf--input" type="file" name="foto">
+                <input type="hidden" name="usuario" value="<?=$_SESSION['usuario']?>">
+            </div>
+            <input class="lf--submit" type="submit" value="Actualizar Foto">
         </form>
-      </div>
+        <a class='lf--forgot' href="../../llamadas/proceso_eliminaruser.php?usuario=<?=$_SESSION['usuario']?>">Desactivar Cuenta</a>
+    </div>
+    <?php
+        }
+    ?>   
 </body>
 </html>
