@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+    <script src="../../js/script.js"></script>
     <title>RegistrarUsuario</title>
 </head>
   <body class="login-body">
